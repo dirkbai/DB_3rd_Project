@@ -1,0 +1,160 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', sans-serif;
+  color: #384047;
+}
+
+h1 {
+  margin: 0;
+}
+
+.title{
+  background-color: rgb(18,18,40);
+  color: white;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  padding: 1em;
+}
+
+.sign_up{
+  width: 90%;
+  color: rgb(18,18,40);
+  font-size: .8em;
+  text-align: center;
+  margin: 3em auto 4em auto;
+}
+
+form {
+  width: 90%;
+  margin: auto;
+  padding: 5px 0 10px 0;
+  border-top: solid 5px rgb(18,18,40);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  height: 4em;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #444;
+  color: white;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+select#State {
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-appearance: none;
+-moz-appearance: none;
+  background-image:
+   linear-gradient(45deg, transparent 50%, gray 50%),
+   linear-gradient(135deg, gray 50%, transparent 50%),
+   linear-gradient(-135deg, transparent 50%, gray 50%),
+   linear-gradient(135deg, transparent 50%, gray 50%);
+ background-position:
+   calc(100% - 20px) calc(2em + 2px),
+   calc(100% - 15px) calc(2em + 2px),
+   calc(100% - 16px) calc(1.3em + 2px),
+   calc(100% - 20px) calc(1.3em + 2px);
+
+ background-size:
+   5px 5px,
+   5px 5px,
+   5px 5px,
+   5px 5px,
+   1.5em 1.5em;
+ background-repeat: no-repeat;
+}
+
+#zipcode {
+  width: 50%;
+}
+
+input[placeholder] {
+  text-align: right;
+  font-style: italic;
+  font-size: .8em;
+}
+
+input:focus{
+  text-align: left;
+  font-style: normal;
+  border: solid 3px orange;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  
+  margin: 2em 8px 8px 0;
+  background-color: black;
+}
+
+input[type="checkbox"]:checked {
+
+    }
+
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: black;
+  background-color: #fcbb66;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  /*border: 1px solid #3ac162;*/
+  /*border-width: 1px 1px 3px;*/
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-bottom: solid 2px black;
+  width: 100%;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 40px 0 30px 0;
+  border-top: solid 2px black;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
