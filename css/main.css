@@ -102,15 +102,26 @@ input:focus {
   background-color: white;
 }
 
+.requirements_email {
+      padding: 0 30px 0 50px;
+      color: #999;
+      transition: 0.8s;
+      max-height: 0;
+      overflow: hidden;
+      color: red;
+    }
+
 input[type="tel"]:invalid:focus,
 input[type="email"]:invalid:focus {
   border: dotted 5px red;
+
 }
+
 
 
 input::-webkit-input-placeholder { text-align: right;
 font-style: italic;
-font-size: .8em; }
+font-size: .8em;}
 input:-moz-placeholder { text-align: right;
 font-style: italic;
 font-size: .8em; } /* FF 4-18 */
