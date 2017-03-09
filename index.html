@@ -17,17 +17,18 @@
       </div>
       <form action="index.html" method="post">
 
-        <!--<legend><span class="number">1</span>Your basic info</legend>-->
+        <!--<legend><span class="number">1</span>Your basic info</legend>
+          -->
         <fieldset>
             <legend>Contact Information</legend>
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="user_name" placeholder="Required">
+            <input type="text" id="name" name="user_name" required placeholder="Required">
 
             <label for="email">Email Adress</label>
-            <input type="email" id="email" name="user_email" placeholder="Required">
+            <input type="email" id="email" name="user_email" required placeholder="Required">
 
             <label for="phone">Phone number</label>
-            <input type="text" id="phone" name="phone_number" placeholder="Not required">
+            <input type="tel" pattern="[0-9\s._/()%+-]*" id="phone" name="phone_number" placeholder="Not required">
 
             <label for="street">Street Adress</label>
             <input type="text" id="street" name="street" placeholder="Not required">
@@ -64,17 +65,17 @@
         <fieldset>
           <legend>Newsletter</legend>
           <label>Select the newsletter you would like to recive</label>
-              <input type="checkbox" id="html_news" value="newsletter_html" name="newsletter_html"><label class="light" for="newsletter_html">HTML News</label><br>
+              <input type="checkbox" id="html_news" value="newsletter_html" name="newsletter_html"><label class="light" for="html_news">HTML News</label><br>
               <input type="checkbox" id="css_news" value="newsletter_css" name="newsletter_css"><label class="light" for="newsletter_css">CSS News</label><br>
               <input type="checkbox" id="javascript_news" value="newsletter_javascript" name="newsletter_javascript"><label class="light" for="newsletter_javascript">Javascript News</label><br>
 
-              <label>Newsletter fromat</label>
+              <label class="labelmargin">Newsletter fromat</label>
               <input type="radio" id="format_html" value="html_format" name="format_html"><label for="format_html" class="light">HTML</label>
               <br>
               <input type="radio" id="format_text" value="text_format" name="format_html"><label for="format_html" class="light">Plain text</label>
 
 
-                <label for="other_topics">Other topics you would like to hear about</label>
+                <label for="other_topics" class="labelmargin">Other topics you would like to hear about</label>
                 <textarea id="other_topics" name="other_topics"></textarea>
         </fieldset>
 

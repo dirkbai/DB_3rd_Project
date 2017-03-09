@@ -64,7 +64,8 @@ select {
   color: white;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
-}
+  transition: background-color 2s;
+  }
 
 select#State {
 -moz-box-sizing: border-box;
@@ -95,21 +96,39 @@ box-sizing: border-box;
   width: 50%;
 }
 
-input[placeholder] {
-  text-align: right;
-  font-style: italic;
-  font-size: .8em;
+input:focus {
+  border: solid 3px orange;
+  color: black;
+  background-color: white;
 }
 
-input:focus{
-  text-align: left;
-  font-style: normal;
-  border: solid 3px orange;
+input[type="tel"]:invalid:focus,
+input[type="email"]:invalid:focus {
+  border: dotted 5px red;
 }
+
+
+input::-webkit-input-placeholder { text-align: right;
+font-style: italic;
+font-size: .8em; }
+input:-moz-placeholder { text-align: right;
+font-style: italic;
+font-size: .8em; } /* FF 4-18 */
+input::-moz-placeholder { text-align: right;
+font-style: italic;
+font-size: .8em; } /* FF 19+ */
+input:-ms-input-placeholder { text-align: right;
+font-style: italic;
+font-size: .8em; }
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; }
+
 
 input[type="radio"],
 input[type="checkbox"] {
-  
   margin: 2em 8px 8px 0;
   background-color: black;
 }
@@ -128,6 +147,7 @@ button {
   font-style: normal;
   border-radius: 5px;
   width: 100%;
+  border-style: none;
   /*border: 1px solid #3ac162;*/
   /*border-width: 1px 1px 3px;*/
   margin-bottom: 10px;
@@ -137,7 +157,6 @@ fieldset {
   margin: 0;
   padding: 0;
   border: none;
-  border-bottom: solid 2px black;
   width: 100%;
 }
 
@@ -154,7 +173,34 @@ label {
   margin-bottom: 10px;
 }
 
+.labelmargin{
+  margin: 2em 0 1em 0;
+}
+
 label.light {
   font-weight: 300;
   display: inline;
+}
+
+#other_topics{
+  min-height: 7em;
+}
+
+form p {
+  text-align: center;
+  font-style: italic;
+  font-size: .9em;
+}
+
+@media (min-width: 768px) {
+
+  .sign_up,{
+    max-width: 600px;
+    margin: auto;
+  }
+
+  form {
+    max-width: 600px;
+    margin: auto;
+  }
 }
