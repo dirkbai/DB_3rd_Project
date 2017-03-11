@@ -17,9 +17,7 @@
       </div>
       <form action="index.html" method="post">
 
-        <!--<legend><span class="number">1</span>Your basic info</legend>
-          -->
-        <fieldset>
+        <fieldset class="Contact_Information">
             <legend>Contact Information</legend>
             <label for="name">Full Name</label>
             <input type="text" id="name" name="user_name" required placeholder="Required">
@@ -64,17 +62,18 @@
             <label for="zipcode">Zip Code</label>
             <input type="text" id="zipcode" name="zipcode">
         </fieldset>
-        <fieldset>
-          <legend>Newsletter</legend>
+        <div id="Border_Newsletter"></div>
+        <fieldset class="Newsletter_Set">
+          <legend class="Newsletter_Title">Newsletter</legend>
           <label>Select the newsletter you would like to recive</label>
               <input type="checkbox" id="html_news" value="newsletter_html" name="newsletter_html"><label class="light" for="html_news">HTML News</label><br>
-              <input type="checkbox" id="css_news" value="newsletter_css" name="newsletter_css"><label class="light" for="newsletter_css">CSS News</label><br>
-              <input type="checkbox" id="javascript_news" value="newsletter_javascript" name="newsletter_javascript"><label class="light" for="newsletter_javascript">Javascript News</label><br>
+              <input type="checkbox" id="css_news" value="newsletter_css" name="newsletter_css"><label class="light" for="css_news">CSS News</label><br>
+              <input type="checkbox" id="javascript_news" value="newsletter_javascript" name="newsletter_javascript"><label class="light" for="javascript_news">Javascript News</label><br>
 
               <label class="labelmargin">Newsletter fromat</label>
               <input type="radio" id="format_html" value="html_format" name="format_html"><label for="format_html" class="light">HTML</label>
               <br>
-              <input type="radio" id="format_text" value="text_format" name="format_html"><label for="format_html" class="light">Plain text</label>
+              <input type="radio" id="format_text" value="text_format" name="format_html"><label for="format_text" class="light">Plain text</label>
 
 
                 <label for="other_topics" class="labelmargin">Other topics you would like to hear about</label>
