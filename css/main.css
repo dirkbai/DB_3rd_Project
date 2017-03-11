@@ -83,7 +83,8 @@ box-sizing: border-box;
  background-repeat: no-repeat;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
   border: solid 3px orange;
   color: black;
   background-color: white;
@@ -106,23 +107,31 @@ input[type="email"]:invalid:focus {
 
 
 
-input::-webkit-input-placeholder { text-align: right;
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder { text-align: right;
 font-style: italic;
 font-size: .8em;}
-input:-moz-placeholder { text-align: right;
+input:-moz-placeholder,
+textarea:-moz-placeholder { text-align: right;
 font-style: italic;
 font-size: .8em; } /* FF 4-18 */
-input::-moz-placeholder { text-align: right;
+input::-moz-placeholder,
+textarea::-moz-placeholder, { text-align: right;
 font-style: italic;
 font-size: .8em; } /* FF 19+ */
-input:-ms-input-placeholder { text-align: right;
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder, { text-align: right;
 font-style: italic;
 font-size: .8em; }
 
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
-input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
-input:focus:-ms-input-placeholder { color:transparent; }
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder,
+textarea:focus::-moz-placeholder { color:transparent; }
 
 #zipcode {
   width: 50%;
